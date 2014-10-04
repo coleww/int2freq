@@ -1,0 +1,22 @@
+{
+  "name": "int2freq",
+  "version": "1.0.0",
+  "description": "converts integers into musical frequencies based on scales",
+  "main": "index.js",
+  "scripts": {
+    "test": "test.js"
+  },
+  "keywords": [
+    "music"
+  ],
+  "homepage": "https://github.com/coleww/int2freq/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/coleww/int2freq.git"
+  },
+  "author": "Cole Willsea <coleww@gmail.com> (http://colewillsea.com/)",
+  "license": "MIT",
+  "devDependencies": {
+    "tape": "^3.0.0"
+  }
+}
