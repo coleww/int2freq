@@ -3,6 +3,7 @@
 
 [![Build Status](https://secure.travis-ci.org/coleww/int2freq.png)](http://travis-ci.org/coleww/int2freq)
 
+[![NPM](https://nodei.co/npm/int2freq.png)](https://nodei.co/npm/int2freq/)
 
 returns a musical frequency from the western scale given a tonic note (_A.K.A._ the **ZEROETH** note), a scale, and a positive/negative integer/index/note-thing.
 
