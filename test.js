@@ -34,3 +34,12 @@ test('complains about out of range inputs', function(t){
   t.equal(int2freq({tonic: 'C8', scale: 'minor'}, 1), undefined)
 })
 
+test('throws error on bad tonic', function(t){
+  t.plan(1)
+  t.throws(function() {int2freq({tonic: 'oblong', scale: 'pentMaj'}, -1)}, /tonic/)
+})
+
+test('throws error on bad scale', function(t){
+  t.plan(1)
+  t.throws(function() {int2freq({tonic: 'A0', scale: 'hairy'}, 0)}, /scale/)
+})

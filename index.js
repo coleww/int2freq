@@ -113,9 +113,9 @@ var str2freq = {
 function int2freq(options, intNote){
 
   var ind = notes.indexOf(options.tonic)
-  // if(ind === -1) throw 'what is up with that tonic?'
+  if(ind === -1) throw 'what is up with that tonic?'
   var scale = scales[options.scale]
-  // if(!scale) throw 'what is up with that scale?'
+  if(!scale) throw 'what is up with that scale?'
 
   while (Math.abs(intNote) > scale.length){
     scale = scale.concat(scale)
