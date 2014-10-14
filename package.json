@@ -4,7 +4,7 @@
   "description": "converts integers/indices into musical frequencies based on a scale and a tonic",
   "main": "index.js",
   "scripts": {
-    "test": "test.js"
+    "test": "node test.js"
   },
   "keywords": [
     "music", "music theory"
