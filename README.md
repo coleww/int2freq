@@ -27,11 +27,11 @@ And so (_in this instance_) if you give int2freq the integer 0, it will return a
 
 ```
 int2freq(0, {tonic: 'A4', scale: 'minor'})
-=> 440.000 // A4
+=> 440.000
 int2freq(1, {tonic: 'A4', scale: 'minor'})
-=> 493.883 // B4
+=> 493.883
 int2freq(-2, {tonic: 'C3', scale: 'major'})
-=> 110.000 // A2
+=> 110.000
 //ETC. ETC.
 ```
 
