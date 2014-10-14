@@ -37,10 +37,10 @@ You can pass the frequency values to a web audio buddy or what have you, and gen
 
 CURRENTLY ACCEPTABLE MUSICAL SCALES:
 
--major
--minor
--pentMaj
--pentMin
+- major
+- minor
+- pentMaj
+- pentMin
 
 TODO:
 
