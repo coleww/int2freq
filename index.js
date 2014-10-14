@@ -110,26 +110,15 @@ var str2freq = {
 }
 
 
-function int2freq(options, intNote){
+function int2freq(intNote, options){
 
   var ind = notes.indexOf(options.tonic)
   if(ind === -1) throw 'what is up with that tonic?'
   var scale = scales[options.scale]
   if(!scale) throw 'what is up with that scale?'
 
-  while (Math.abs(intNote) > scale.length){
-    scale = scale.concat(scale)
-  }
-
-  if(intNote >= 0){
-    for (var i = 0; i < intNote; i+= 1){
-      ind += scale[i]
-    }
-  } else {
-    for (var j = -1; j >= intNote; j-= 1){
-      ind -= scale[scale.length + j]
-    }
-  }
+  while (Math.abs(intNote) > scale.length) scale = scale.concat(scale)
+  if(intNote >= 0) for (var i = 0; i < intNote; ind += scale[i], i+= 1 ){}
+  else for (var j = -1; j >= intNote; ind -= scale[scale.length + j], j-= 1){}
   return str2freq[notes[ind]]
-
 }
