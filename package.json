@@ -1,13 +1,13 @@
 {
   "name": "int2freq",
   "version": "1.0.0",
-  "description": "converts integers into musical frequencies based on scales",
+  "description": "converts integers/indices into musical frequencies based on a scale and a tonic",
   "main": "index.js",
   "scripts": {
     "test": "test.js"
   },
   "keywords": [
-    "music"
+    "music", "music theory"
   ],
   "homepage": "https://github.com/coleww/int2freq/",
   "repository": {
