@@ -43,3 +43,8 @@ test('throws error on bad scale', function(t){
   t.plan(1)
   t.throws(function() {int2freq(0, {tonic: 'A0', scale: 'hairy'})}, /scale/)
 })
+
+test('exports scale names', function(t){
+  t.plan(1)
+  t.ok(Array.isArray(int2freq.scales))
+})

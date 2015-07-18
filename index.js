@@ -1,5 +1,3 @@
-module.exports = int2freq
-
 var scales = {
   major: [2, 2, 1, 2, 2, 2, 1],
   minor: [2, 1, 2, 2, 1, 2, 2],
@@ -40,3 +38,7 @@ function int2freq(intNote, options){
   else for (var j = -1; j >= intNote; index -= scale[scale.length + j], j-= 1){}
   return str2freq[notes[index]]
 }
+
+module.exports = int2freq
+
+module.exports.scales = Object.keys(scales)
