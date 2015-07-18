@@ -23,16 +23,26 @@ So what we have is maybe a classic C MAJOR scale which is composed of the notes:
 
 And so (_in this instance_) if you give int2freq the integer 0, it will return a C. If you pass it a 1, it will go one hop up the scale ladder to a D. If you give it a -2, it will make two hops down the scale chute to an A. FUN!
 
+### INSTALLL
+
+`npm install int2freq`
+
 ### EXAMPLES
 
 ```
+var int2freq = require('int2freq)
 int2freq(0, {tonic: 'A4', scale: 'minor'})
 => 440.000
 int2freq(1, {tonic: 'A4', scale: 'minor'})
 => 493.883
 int2freq(-2, {tonic: 'C3', scale: 'major'})
 => 110.000
-//ETC. ETC.
+//ETc. etc.
+
+int2freq.scales
+=>  get an array of scale keys!
+int2Freq.notes
+=> get an array of note strings!
 ```
 
 You can pass the frequency values to a web audio buddy or what have you, and generate the inputs in some other manner based on whatever science you enjoy and participate in.
@@ -45,6 +55,7 @@ int2freq can handle positive/negative indexes of arbitrary value (_AKA_ **-17** 
 - minor
 - pentMaj
 - pentMin
+- blues
 
 ### CURRENT ACCEPTABLE MUSICAL TONICS:
 
