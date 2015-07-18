@@ -17,9 +17,11 @@ test('goes negative', function(t){
 })
 
 test('does other scales', function(t){
-  t.plan(2)
+  t.plan(4)
   t.equal(int2freq(-3, {tonic: 'A4', scale: 'pentMaj'}), 277.183)
   t.equal(int2freq(3, {tonic: 'A4', scale: 'pentMin'}), 659.255)
+  t.equal(int2freq(-2, {tonic: 'A4', scale: 'blues'}), 329.628)
+  t.equal(int2freq(2, {tonic: 'A4', scale: 'minor'}), 523.251)
 })
 
 test('allows for range of A0-C8', function(t){
