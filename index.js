@@ -42,3 +42,4 @@ function int2freq(intNote, options){
 module.exports = int2freq
 
 module.exports.scales = Object.keys(scales)
+module.exports.notes = Object.keys(notes)

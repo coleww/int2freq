@@ -48,3 +48,8 @@ test('exports scale names', function(t){
   t.plan(1)
   t.ok(Array.isArray(int2freq.scales))
 })
+
+test('exports notes', function(t){
+  t.plan(1)
+  t.ok(Array.isArray(int2freq.notes))
+})
