@@ -4,10 +4,11 @@
   "description": "converts integers/indices into musical frequencies based on a scale and a tonic",
   "main": "index.js",
   "scripts": {
-    "test": "node test.js"
+    "test": "standard && node test.js"
   },
   "keywords": [
-    "music", "music theory"
+    "music",
+    "music theory"
   ],
   "homepage": "https://github.com/coleww/int2freq/",
   "repository": {
@@ -17,6 +18,7 @@
   "author": "Cole Willsea <coleww@gmail.com> (http://colewillsea.com/)",
   "license": "MIT",
   "devDependencies": {
+    "standard": "^4.5.4",
     "tape": "^3.0.0"
   }
 }

@@ -29,13 +29,13 @@ var str2freq = {
 
 var notes = Object.keys(str2freq)
 
-function int2freq(intNote, options){
-  var index, scale;
-  if((index = notes.indexOf(options.tonic)) === -1) throw 'what is up with that tonic?'
-  if(!(scale = scales[options.scale])) throw 'what is up with that scale?'
+function int2freq (intNote, options) {
+  var index, scale
+  if ((index = notes.indexOf(options.tonic)) === -1) throw new Error('what is up with that tonic?')
+  if (!(scale = scales[options.scale])) throw new Error('what is up with that scale?')
   while (Math.abs(intNote) > scale.length) scale = scale.concat(scale)
-  if(intNote >= 0) for (var i = 0; i < intNote; index += scale[i], i+= 1 ){}
-  else for (var j = -1; j >= intNote; index -= scale[scale.length + j], j-= 1){}
+  if (intNote >= 0) for (var i = 0; i < intNote; index += scale[i], i += 1) {}
+  else for (var j = -1; j >= intNote; index -= scale[scale.length + j], j -= 1) {}
   return str2freq[notes[index]]
 }
 

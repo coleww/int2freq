@@ -2,6 +2,7 @@
 ---------------
 
 [![Build Status](https://secure.travis-ci.org/coleww/int2freq.png)](http://travis-ci.org/coleww/int2freq)
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 
 [![NPM](https://nodei.co/npm/int2freq.png)](https://nodei.co/npm/int2freq/)
 
